@@ -8,7 +8,7 @@ In the card game war it is a simple game that will have 2 players go against eac
 
 
 
-###User Stories-  
+### User Stories-  
 
 The game will have 2 players 
 
@@ -25,26 +25,26 @@ The cards will be added into the winning player's deck and will automaticlly be 
 The winner of the game will be decided only when one player does not have any more cards in there deck. 
 
 
-###The page Layout! 
+### The page Layout! 
 ![Project 1 card game War wireframe ](https://user-images.githubusercontent.com/105845188/178614728-914e7a18-3b75-4350-b577-a8c89094d95a.png)
 
 
 
 
-###Example of the result page! 
+### Example of the result page! 
 
 
 
 ![Project 1 Card game War wireframe Result screen ](https://user-images.githubusercontent.com/105845188/178615313-252923cb-8ef5-4e5c-b8f1-67898cd5b467.png)
 
 
-###MVP Goals!!! 
+### MVP Goals!!! 
 
-As a player, I want my game to be able to recognize which player won in each respected face off 
+**As a player, I want my game to be able to recognize which player won in each respected face off** 
 
-As a player, I want to be able to have the game display the win condition when one player taking all the cards and one player does have any cards in their deck. 
+**As a player, I want to be able to have the game display the win condition when one player taking all the cards and one player does have any cards in their deck.** 
 
-As a player I want the game to be able to displayer each card that is being flipped over so the player can see the value of each respected card. 
+**As a player I want the game to be able to displayer each card that is being flipped over so the player can see the value of each respected card.** 
 
-As a player I want the game to be able to display a replay button once the win condition is met. So the game can restart and be played again!  
+**As a player I want the game to be able to display a replay button once the win condition is met. So the game can restart and be played again!** 
 
