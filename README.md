@@ -10,19 +10,19 @@ In the card game war it is a simple game that will have 2 players go against eac
 
 ### User Stories-  
 
-The game will have 2 players 
+-The game will have 2 players 
 
-There will be 2 name submit bars and on the top and bottom of the screen 
+-There will be 2 name submit bars and on the top and bottom of the screen 
 
-There will be 2 decks that will appear on the screen representing player 1 and player 2 decks 
+-There will be 2 decks that will appear on the screen representing player 1 and player 2 decks 
 
  
 
-The players will press anywhere on the screen to make the cards flip and the card with the higher value would win which will be displayed in the middle of the screen which player won the immediate face off of cards.
+-The players will press anywhere on the screen to make the cards flip and the card with the higher value would win which will be displayed in the middle of the screen which player won the immediate face off of cards.
 
-The cards will be added into the winning player's deck and will automaticlly be shuffled so it would be impossible to count and predict the card order of each respected player's deck 
+-The cards will be added into the winning player's deck and will automaticlly be shuffled so it would be impossible to count and predict the card order of each respected player's deck 
 
-The winner of the game will be decided only when one player does not have any more cards in there deck. 
+-The winner of the game will be decided only when one player does not have any more cards in there deck. 
 
 
 ### The page Layout! 
