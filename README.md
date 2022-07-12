@@ -4,8 +4,6 @@ The Project I am purposing is the Card game war
 
 In the card game war it is a simple game that will have 2 players go against each other with each respected player having half of the deck of tradtional playing cards 1-10, jacks, queens, kings, and Aces in 4 different suits (clovers,hearts, spades, diamonds 
 
-How this game works is that 
-
 
 
 
@@ -24,4 +22,19 @@ the winner will take the cards and put them into the winning player's deck
 
 the winner will be decided only when one player does not have any more cards in there deck. 
 
+
+The page Layout! 
 ![Project 1 card game War wireframe ](https://user-images.githubusercontent.com/105845188/178614728-914e7a18-3b75-4350-b577-a8c89094d95a.png)
+
+
+
+
+Example of the result page! 
+
+
+
+![Project 1 Card game War wireframe Result screen ](https://user-images.githubusercontent.com/105845188/178615313-252923cb-8ef5-4e5c-b8f1-67898cd5b467.png)
+
+
+
+
