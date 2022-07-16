@@ -1,19 +1,66 @@
 
 
 
+*, *::after,*::before {
+    box-sizing: border-box;
+}
+
+
 body {
     margin: 0;
-    display: grid;
-    grid-template-columns: repeat(2,6rem);
-    grid-template-rows: 7rem 2rem 7rem;
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
     gap: .5rem;
     cursor: pointer;
     justify-content: center;
     padding-top: 20px;
+    border: 1px solid black;
+    
 }
 
+.player-1-deck {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    font-size:30px ;
+}
+
+.player-1-card-slot {
+
+}
+
+.player-2-deck {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    font-size:30px ;
+
+
+}
+
+
 .deck {
-    height: 100%;
-    width: 100%;
+    height: 100px;
+    width: 10%;
     border: 1px solid black ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    
+}
+
+.result-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 20px;
 }
