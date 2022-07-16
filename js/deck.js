@@ -20,9 +20,9 @@ export default class Deck {
             // writing this for loop out I wrote it so we are getting the last card of the deck to the front of the deck  
         for (let i = this.cards.length - 1; i > 0; i--) {
            // line 24 I wrote so I can gett a new index for the card I want to flip that would be a random index before the current index because we are starting from the last card to the front  
-           // so i am making a new index position for the card math.random
-            const newIndex = Math.floor(Math.random() * (i + 1))
-            const oldValue = this.cards[newIndex]
+           // so i am making a new index position for the card with math.random() * (i + 1)
+            const newIndex = Math.floor(Math.random() * (i + 1)) // Math.random does not need anythinng in ()
+            const oldValue = this.cards[newIndex]                // (i + 1) = 51 + 1 from i loop
             this.cards[newIndex] = this.cards[i]
             this.cards[i] = oldValue
         }
