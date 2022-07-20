@@ -1,22 +1,69 @@
 
 
 
-*, *::after,*::before {
+/* *, *::after,*::before {
     box-sizing: border-box;
-}
+} */
 
 
 body {
     margin: 0;
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     height: 100vh;
     gap: .5rem;
     cursor: pointer;
-    justify-content: center;
     padding-top: 20px;
     border: 1px solid black;
     
+     
+     /* margin: 0 auto;
+      display: flex; 
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center; */
+     border: 1px solid  
+} 
+
+/*
+center display box 
+
+display flex
+flex-direction column
+justify-content center 
+align item center  
+ */
+
+ /* for player one box and player 2 box 
+
+ display flex-direction column flex-start 
+ 
+ display flex direction coljumn flex-end
+  */
+
+
+
+.player1box {
+    
+    display: flex;
+    height: 500px;
+    width: 500px;
+    align-self: flex-start;
+    align-items: center;
+    border: 1px solid black
+} 
+
+.centerbox {
+    border: solid black;
+}
+
+.player2box {
+    display: flex;
+    height: 500px;
+    width: 500px;
+    align-self: flex-end;
 }
 
 .player-1-deck {
@@ -27,6 +74,9 @@ body {
     justify-content: center;
     align-items: center;
     font-size:30px ;
+    background-color: blue;
+    border-radius: .5rem;
+    color: white;
 }
 
 .player-1-card-slot {
@@ -37,7 +87,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size:30px ;
-
+            
 }
 
 .player-2-deck {
@@ -48,7 +98,9 @@ body {
     justify-content: center;
     align-items: center;
     font-size:30px ;
-
+    background-color: red;
+    border-radius: .5rem;
+    color: white;
 
 }
 
@@ -72,7 +124,12 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 50px;
-    
+    color: white;
+}
+
+
+.player-1-card-slot {
+    margin: 39px;
 }
 
 .result-box {
@@ -83,18 +140,63 @@ body {
     padding: 20px;
 }
 
-/*
-center display box 
+.player-2-card-slot {
+    margin: 39px;
+}
 
-display flex
-flex-direction column
-justify-content center 
-align item center  
- */
+/* this was extremely confusing for me at first, but what i want to do is design the 
+cards value and have them appear as it is being flipped up*/
 
- /* for player one box and player 2 box 
+.card {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+}
 
- display flex-direction column flex-start 
- 
- display flex direction coljumn flex-end
-  */
+.blackCard {
+    color: black;
+}
+
+.redCard {
+    color: red;
+}
+
+/* so i never used ::before so i did some research and found that ::before creates a pseudo-element 
+that is the first child of the selected element for exmaple I found the data value of the example card i used 
+which was the 9 of spades and i put the value onto the card itself so the we the people can see it physcially 
+ - link https://developer.mozilla.org/en-US/docs/Web/CSS/::before */
+
+ /* ::after follows the same principle as ::before so what  i just found out here is that it creates another pwseudo-element and it will be the last element of the selected element 
+    i want.
+    -link https://developer.mozilla.org/en-US/docs/Web/CSS/::after */ 
+.card::before,
+.card::after {
+    /* so i'm not too too familiar with attr() but after researching i found that attr() is retrieving the value of a attribute from a selected 
+    element and is able to be used in the stylesheet! what that means is that when i grabbed data-value i was grabbing the 9 of spades since that was my example 
+    value of the card. and that was being displayed  
+    -link https://developer.mozilla.org/en-US/docs/Web/CSS/attr */
+
+
+    position: absolute;
+    content: attr(data-value);
+    font-size: 1rem;
+
+}
+
+/* so what i did here was with the help of my software engineering friends was strictly control the first element i added onto the card.
+so i can display it on the top left corner of the card  */
+.card::before {
+    top: .5rem;
+    left: .5rem;
+}
+
+.card::after {
+    bottom: .5rem;
+    right: .5rem;
+}

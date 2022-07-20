@@ -35,7 +35,23 @@ class Card {
         this.suit = suit 
         this.value = value 
     }
-} 
+    // right here i am writing a function to be able to change the color of the card based on the suit as Hearts and diamonds are red 
+    // and spades and clubs are black. 
+   get color() {
+    if (document.querySelector(".card").innerText === "♣" || "♠" )  {
+         document.querySelector(".card").classList.add(".redCard")
+   }
+   
+    // what i am making is, i need to make a function so i can get the value and attributes of the card to appear accordingly
+
+    function getHTML() {
+        const cardDiv = document.createElement('div')
+        cardDiv.innerText = this.suit
+        cardDiv.classList.add("card")
+         }
+    } 
+
+}
 
 // the function freshDeck is so I can make a 52 card deck going from 2-A in each respected suit 
 // i want to loop through the suits and loop through all the values and conbine them together to make the cards in one array  
