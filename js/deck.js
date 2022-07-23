@@ -10,10 +10,22 @@ const VALUES = ["2","3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"]
 // exporting can move live objects, functions, or primitive values so they can be used by another program with the import declaration. In this current case i'm moving my deck Class into my app.js  
 // research link on export = https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export
 export default class Deck {
-    constructor() {
-        // this.card is using our freshDeck function but since we designed our freshdeck function to return the newCards array this Deck class is return the array full of the 52 card array. 
-        this.cards = freshDeck()
-        console.log(this.cards)
+    constructor(cards = freshDeck()) {
+       
+        this.cards = cards
+        
+    }
+
+    get numberOfCards() {
+        return this.cards.length
+    }
+    // this pop function is to help me flip/reveal the first card from the deck. i am using .shift because i want to be able to take the top card which is the first element in the array which shrift does.   
+    pop() {
+        return this.cards.shift()
+    }
+    // this push function is so i can add the cards back into the deck 
+    push(card) {
+        this.cards.push(card)
     }
     // this is the shuffle function that I made 
     shuffle() {
@@ -37,21 +49,25 @@ class Card {
     }
     // right here i am writing a function to be able to change the color of the card based on the suit as Hearts and diamonds are red 
     // and spades and clubs are black. 
-   get color() {
-    if (document.querySelector(".card").innerText === "♣" || "♠" )  {
-         document.querySelector(".card").classList.add(".redCard")
-   }
+    get color () {
+        return this.suit === "♣" || this.suit === "♠" ? 'black' : 'red'
+    }
+
+   
+    
    
     // what i am making is, i need to make a function so i can get the value and attributes of the card to appear accordingly
-
-    function getHTML() {
+    
+    getHTML () {
         const cardDiv = document.createElement('div')
         cardDiv.innerText = this.suit
-        cardDiv.classList.add("card")
+        cardDiv.classList.add("card", this.color)
+        cardDiv.dataset.value = `${this.value} ${this.suit}`
+        return cardDiv
          }
-    } 
+} 
 
-}
+
 
 // the function freshDeck is so I can make a 52 card deck going from 2-A in each respected suit 
 // i want to loop through the suits and loop through all the values and conbine them together to make the cards in one array  
