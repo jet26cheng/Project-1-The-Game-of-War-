@@ -88,13 +88,13 @@ let inRound = false
 // i am currently adding the event listener for when my game plays. basically it is saying when ever a round is being played 
 //it will clean the field. but at the same time that it does that I will have a flip card function so i can flip the card to start
 // the round of play. 
-document.addEventListener('click', () => {
-    if (inRound) {
-        cleanBeforeRound()
-    } else {
-        flipCards()
-    }
-})
+// document.addEventListener('click', () => {
+//     if (inRound) {
+//         cleanBeforeRound()
+//     } else {
+//         flipCards()
+//     }
+// })
 
 
 // This is making the start point of the game that i created.  
@@ -117,7 +117,16 @@ function startGame() {
     // console.log(player2Deck)
     cleanBeforeRound()
     
-    
+    // i am currently adding the event listener for when my game plays. basically it is saying when ever a round is being played 
+//it will clean the field. but at the same time that it does that I will have a flip card function so i can flip the card to start
+// the round of play. 
+document.addEventListener('click', () => {
+    if (inRound) {
+        cleanBeforeRound()
+    } else {
+        flipCards()
+    }
+})
     // this was testing to see if the card was rendering on the field correctly 
     // player2CardSlot.appendChild(deck.cards[0].getHTML())
 }
