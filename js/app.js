@@ -152,11 +152,11 @@ document.addEventListener('click', () => {
         updateDeckCount()
 
         if (isTheWinner1(player1Card, player2Card)) {
-            result.innerHTML = "Wins!"
+            result.innerHTML = "Player 1 Wins!"
             player1Deck.push(player1Card)
             player1Deck.push(player2Card)
         } else if (isTheWinner2(player1Card, player2Card)) {
-            result.innerText = "Win"
+            result.innerText = "Player 2 Wins!"
             player2Deck.push(player1Card)
             player2Deck.push(player2Card)
         } else {
