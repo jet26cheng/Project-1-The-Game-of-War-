@@ -11,9 +11,9 @@ function name1() {
     nameSpace1.innerHTML = nameSpace1
 }
 name1Button.addEventListener("click", function(e) {
-    const name = prompt("Player 1 Name ?")
+    const nameP1 = prompt("Player 1 Name ?")
 
-    document.getElementById("nameSpace1").innerHTML = name;
+    document.getElementById("nameSpace1").innerHTML = nameP1;
     
 });
 
@@ -24,9 +24,9 @@ function name2() {
     nameSpace2.innerHTML = nameSpace2
 }
 name2Button.addEventListener("click", function(e) {
-    const name = prompt("Player 2 Name ?")
+    const nameP2 = prompt("Player 2 Name ?")
 
-    document.getElementById("nameSpace2").innerHTML = name;
+    document.getElementById("nameSpace2").innerHTML = nameP2;
     startGame();
     
 }
@@ -152,11 +152,11 @@ document.addEventListener('click', () => {
         updateDeckCount()
 
         if (isTheWinner1(player1Card, player2Card)) {
-            result.innerText = "win"
+            result.innerHTML = "Wins!"
             player1Deck.push(player1Card)
             player1Deck.push(player2Card)
         } else if (isTheWinner2(player1Card, player2Card)) {
-            result.innerText = "2 win"
+            result.innerText = "Win"
             player2Deck.push(player1Card)
             player2Deck.push(player2Card)
         } else {

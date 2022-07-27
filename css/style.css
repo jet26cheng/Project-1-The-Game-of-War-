@@ -60,10 +60,10 @@ align item center
     display: flex;
     flex-direction: column;
     height: 50%;
-    width: 500px;
+    width: 30%;
     align-self: flex-start;
     align-items: center;
-    border: 1px solid black;
+
     padding: 50px
 } 
 
@@ -71,15 +71,16 @@ h1 {
      color: white;
 }
 .centerbox {
-    border: solid black;
-    height: ;
+    align-items: center;
+    
+    
 }
 
 .player2box {
     display: flex;
     flex-direction: column;
     height: 50%;
-    width: 500px;
+    width: 30%;
     align-self: flex-end;
     align-items: center;
     padding: 50px;
@@ -92,7 +93,7 @@ h1 {
 }
 .player-1-deck {
     display: flex;
-    width: 150px;
+    width: 25%;
     height: 200px;
     border: 2px solid black;
     justify-content: center;
@@ -104,12 +105,12 @@ h1 {
 }
 
 .player-1-card-slot {
-    display: flex;
+    
     width: 150px;
     height: 200px;
     border: 2px solid black;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
     font-size:40px ;
     background-color: white;
     border-radius: .5rem;
@@ -118,7 +119,7 @@ h1 {
 
 .player-2-deck {
     display: flex;
-    width: 150px;
+    width: 25%;
     height: 200px;
     border: 2px solid black;
     justify-content: center;
@@ -136,12 +137,13 @@ h1 {
     width: 150px;
     height: 200px;
     border: 1px solid black;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; 
+    align-items: center; 
     font-size:30px ;
     background-color: white;
     border-radius: .5rem;
-
+    
+    
 }
 
 
@@ -165,8 +167,11 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    font-size: 30px;
     padding: 20px;
+    height: 100px;
+    width: auto;
+    color: white;
 }
 
 .player-2-card-slot {
@@ -223,9 +228,11 @@ so i can display it on the top left corner of the card  */
 .card::before {
     top: .5rem;
     left: .5rem;
+    font-size: 40%;
 }
 
 .card::after {
     bottom: .5rem;
     right: .5rem;
+    font-size: 40%;
 }
